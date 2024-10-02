@@ -1,0 +1,19 @@
+name = 'Pathway Pro'
+license = 'MIT'
+licenselink = 'https://github.com/davidmvalente/hugo-pathway/LICENSE'
+description = 'A professional pathway landing page theme.'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/davidmvalente/hugo-pathway'
+
+# If you have a running demo of the theme
+demosite = 'https://owner.github.io/repo'
+
+# Taxonomy terms
+tags = ['landing-page', 'professional', 'portfolio', 'skills', 'tailwind']
+features = ['tailwind', 'skills', 'responsive']
+
+# If the theme has a single author
+[author]
+  name = 'David Valente'
+  homepage = 'https://davidvalente.xyz'

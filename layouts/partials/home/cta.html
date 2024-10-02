@@ -1,0 +1,24 @@
+<aside class="container min-w-full px-auto pb-12 relative flex items-center bg-gradient-to-r from-emerald-100 via-white to-emerald-100 h-full">
+    <!-- Background Image for Large Displays -->
+    <div class="absolute h-100 inset-y-0 right-0 lg:w-1/2 w-100 w-full bg-cover bg-center bg-bottom lg:block opacity-20 lg:opacity-100"
+         style="background-image: url('{{ .Site.Data.home.cta.background_image }}');"></div>
+
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-l opacity-30 from-accent to-transparent"></div>
+
+    <!-- Content -->
+    <div class="relative w-full mx-auto max-w-fit min-w-screen-2xl px-12 md:flex md:items-center md:justify-between h-full">
+        <div class="py-20 lg:w-1/2">
+            <h1 class="text-4xl font-serif lg:text-5xl font-extrabold text-primary mb-6">
+                {{ .Site.Data.home.cta.title }}
+            </h1>
+            <p class="text-lg lg:text-xl text-gray-600 mb-8">
+                {{ .Site.Data.home.cta.description }}
+            </p>
+            <a href="{{ .Site.Data.home.cta.button_link }}" class="inline-block p-4 text-lg font-medium text-white bg-accent rounded-lg shadow-sm hover:bg-emerald-700 transition">
+                <img src="{{ .Site.Data.home.cta.icon }}" alt="Calendly Logo" class="inline mr-2 h-6 w-6">
+                {{ .Site.Data.home.cta.button_text }}
+            </a>
+        </div>
+    </div>
+</aside>

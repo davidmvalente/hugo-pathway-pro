@@ -1,0 +1,29 @@
+# data/home.yaml
+
+headline: "Hello, I'm John Doe 👋"
+blockquote: "As an Senior Client Director at Megacorp International, I excel in elevating operational efficiency and client satisfaction across medium to large-sized companies. I focus on selling, implementing, and driving innovative service solutions. I have managed robust partnerships that significantly increased annual revenue growth by 34%. My commercial awareness and strategic foresight have been instrumental in delivering outstanding results."
+paragraphs:
+  - "Successful businesses are built on foundations of human connection and ethical leadership."
+  - "My work is driven by the desire to empower leaders to make future-proof decisions, build resilient organizations, and create sustainable futures."
+  - "My experience in people management and AI integration has shown me that combining data-driven insights with empathy can unlock extraordinary technological potential."
+
+banner:
+  title: "🌱 How can I help you?"
+  image: "/images/green-screen.jpg"
+  help_list:
+    - title: "Strategic Thinking"
+      description: "Developing and executing data-driven strategies for growth."
+    - title: "Relationship Building"
+      description: "Fostering strong partnerships based on trust and mutual benefit."
+    - title: "People Management"
+      description: "Inspiring and empowering teams to achieve exceptional results."
+    - title: "AI Change Management"
+      description: "Leveraging AI ethically and effectively to drive business impact."
+
+cta:
+  title: "Need A Human?"
+  description: "Together, we can grow your revenue by large margins, explore efficiencies in your organization, and elevate your partnerships to the next level."
+  button_text: "Request a Brainstorm"
+  button_link: "https://calendly.com" # TODO 
+  background_image: "/images/lookingcharts.jpg"
+  icon: "/icons/calendly.svg"

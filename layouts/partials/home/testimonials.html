@@ -1,0 +1,14 @@
+<section id="testimonials" class="mb-12">
+    <h2 class="text-3xl font-serif mb-4 text-primary">🤝🏻 Testimonials</h2>
+    
+    {{ range .Site.Data.testimonials }}
+    <div class="bg-white p-6 rounded-lg shadow-sm mb-4 justify-center text-center">
+      <q class="text-5xl font-serif font-bold text-accent"></q>
+      <p class="mb-2">{{ .quote }}</p>
+      <p>
+        <a href="{{ .author_link }}" class="text-primary hover:underline font-bold">{{ .author }}</a>
+      </p>
+    </div>
+    {{ end }}
+  </section>
+ 

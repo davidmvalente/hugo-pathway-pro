@@ -1,0 +1,19 @@
+<!-- Expertise section to detail skills and competencies -->
+<section id="expertise" class="mb-12">
+    <h2 class="text-3xl font-serif mb-4 text-primary">Competences & Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      {{ range .Site.Data.expertise }}
+      <!-- Card -->
+      <div class="group bg-blue-100 rounded-lg shadow-sm overflow-hidden p-4">
+        <h3 class="text-xl font-bold mb-2 text-blue-800">{{ .title }}</h3>
+        <div class="flex flex-wrap gap-2">
+          {{ range .tags }}
+          <span class="bg-blue-200 text-blue-800 text-xs px-2 py-1 rounded">{{ . }}</span>
+          {{ end }}
+        </div>
+
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  

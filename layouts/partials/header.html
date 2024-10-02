@@ -1,0 +1,24 @@
+<div class="container mx-auto px-4 text-center text-emerald-800">
+    <div class="relative inset-0 flex pt-12 pb-4">
+        <img 
+            src="{{ .Site.Data.header.image}}"
+            class="m-auto rounded-full border-4 border-white max-h-60"
+            alt="{{ .Site.Title }}, profile picture" />
+    </div>
+    <h1 class="text-5xl font-extrabold mb-2 text-primary">{{ .Site.Title }}</h1>
+    <p class="text-xl text-primary">{{ .Site.Data.header.headline }}</p>
+    <p class="text-xl font-light text-primary">{{ .Site.Data.header.location }}</p>
+    <!-- Social media and contact links -->
+    <p class="my-4">
+        <a href="{{ .Site.Data.contacts.linkedin.url }}" class="text-accent font-semibold py-3 px-3 rounded-lg transition">
+            <img src="{{ .Site.Data.contacts.linkedin.icon }} " alt="LinkedIn Logo" class="text-secondary inline mr-2 h-6 w-6"
+                style="filter: invert(53%) sepia(97%) saturate(2725%) hue-rotate(160deg) brightness(92%) contrast(101%);"/>
+        </a>
+        <a href="mailto:{{ .Site.Data.contacts.email.url  }}" class="text-blue-600 font-semibold py-3 px-3 rounded-lg transition">
+            <img src="{{ .Site.Data.contacts.email.icon  }}" alt="Email Logo" class="inline mr-2 h-6 w-6"
+                style="filter: invert(53%) sepia(97%) saturate(2725%) hue-rotate(160deg) brightness(92%) contrast(101%);"/>
+        </a>
+    </p>
+</div>
+
+<!-- {{ partial "menu.html" (dict "menuID" "main" "page" .) }} -->

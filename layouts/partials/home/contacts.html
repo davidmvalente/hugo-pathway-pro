@@ -1,0 +1,29 @@
+<!-- Contact Links -->
+<section class="mb-12">
+    <h2 class="text-xl mb-4 font-serif text-center font-light text-primary">
+        {{ .Site.Data.contacts.text }}
+    </h2>
+
+    <div class="md:flex md:flex-row flex-col text-center">
+        {{ with .Site.Data.contacts.linkedin }}
+        <a href="{{ .url }}" class="w-full p-3 mt-3 text-lg font-medium text-white bg-accent hover:bg-emerald-700 rounded-lg shadow-sm transition inline-block sm:w-full md:w-1/3 md:mx-1">
+            <img src="{{ .Site.BaseURL }}icons/linkedin.svg" alt="linkedin logo" class="inline mr-2 h-6 w-6">
+            {{ .text }}
+        </a>
+        {{ end }}
+
+        {{ with .Site.Data.contacts.resume }}
+        <a href="{{ .url }}" class="w-full p-3 mt-3 text-lg font-medium text-white bg-accent hover:bg-emerald-700 rounded-lg shadow-sm transition inline-block sm:w-full md:w-1/3 md:mx-1">
+            <img src="{{ .Site.BaseURL }}icons/downloading.svg" alt="downloading icon" class="inline mr-2 h-6 w-6">
+            {{ .text }}
+        </a>
+        {{ end }}
+
+        {{ with .Site.Data.contacts.email }}
+        <a href="mailto:{{ .address }}" class="w-full p-3 mt-3 text-lg font-medium text-white bg-accent hover:bg-emerald-700 rounded-lg shadow-sm transition inline-block sm:w-full md:w-1/3 md:mx-1">
+            <img src="{{ .Site.BaseURL }}icons/email.svg" alt="email logo" class="inline mr-2 h-6 w-6">
+            {{ .text }}
+        </a>
+        {{ end }}
+    </div>
+</section>

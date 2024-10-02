@@ -1,0 +1,16 @@
+# data/contact.yaml
+text: Let's connect and explore how we can work together!
+linkedin:
+  url: "https://www.linkedin.com/in/your-profile/"
+  text: "Mentorship? Let's Connect on LinkedIn"
+  icon: "/icons/linkedin.svg"
+
+resume:
+  url: "/resume.pdf"
+  text: "Hiring Manager? Download my Resume"
+  icon: "/icons/downloading.svg"
+
+email:
+  address: "your@email.com"
+  text: "Curious? Contact me via Email"
+  icon: "/icons/email.svg"

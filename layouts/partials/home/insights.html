@@ -1,0 +1,14 @@
+<section id="insights" class="mb-12">
+    <h2 class="text-3xl font-serif mb-4 text-primary">Insights & Case Studies</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {{ range .Site.RegularPages }}
+            {{  if or (in .Section "insights") (in .Type "insights")  }}
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold mb-2">{{ .Title }}</h3>
+                    <p class="mb-2">{{ .Params.description }}</p>
+                    <a href="{{ .Permalink }}" class="text-accent hover:underline">Read More</a>
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+</section>

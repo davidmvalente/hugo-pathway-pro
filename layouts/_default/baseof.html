@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="bg-background font-lato text-text">
+  <header class="bg-gradient-to-b from-emerald-100 from-10% via-sky to-indigo-100 to-90% text-white py-8">
+    {{ partial "header.html" . }}
+  </header>
+  <main class="container mx-auto px-4 mb-3 max-w-5xl">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "home/cta.html" . }}
+  <footer class="bg-primary text-white py-4">
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>

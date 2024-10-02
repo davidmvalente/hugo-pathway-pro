@@ -1,0 +1,42 @@
+  <!-- About section with personal and professional summary -->
+  <section id="about" class="mb-12">
+    <h2 class="text-4xl font-serif font-light my-4 pt-5 text-primary">{{ .Site.Data.home.headline }}</h2>
+    
+    <!-- Highlighted first paragraph -->
+    <blockquote class="text-xl font-lato text-emerald-800 my-8 border-s-4 border-emerald-300 px-4">
+      {{ .Site.Data.home.blockquote }}
+    </blockquote>
+
+    {{ range .Site.Data.home.paragraphs }}
+    <p class="text-lg text-gray-700 mb-3">
+      {{ . }}
+    </p>
+    {{ end }}
+  </section>
+
+  <!-- Banner "How can I help you" section -->
+  <aside id="banner" class="flex items-center justify-center mb-12">
+    <div class="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <!-- Left Side: Image of People Working together -->
+
+
+      <!-- Right Side: How can I help you? Bullet points-->
+      <div class="w-full md:w-1/2 flex flex-col justify-center">
+        <h1 class="text-3xl font-serif mb-6"> {{ .Site.Data.home.banner.title }}</h1>
+        <ul class="list-disc list-inside text-lg text-gray-700 mb-6 space-y-2">
+          {{ range .Site.Data.home.banner.help_list }}
+          <li><b>{{ .title }}:</b> {{ .description }}</li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+        <div class="relative w-full max-w-max h-55 md:h-80 rounded-lg shadow-sm overflow-hidden">
+          <img class="object-top md:h-full object-cover" src="{{ .Site.Data.home.banner.image }}" alt="Strategic Thinkers Interaction">
+        </div>
+      </div>
+      
+    </div>
+  </aside>
+
+

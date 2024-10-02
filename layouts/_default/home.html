@@ -1,0 +1,14 @@
+{{ define "main" }}
+  
+  {{ partial "home/about.html" . }}
+  <div class="text-lg text-gray-700 mb-3">
+    {{ .Content }}
+  </div>
+
+  <!-- A slash with contact links-->
+  {{ partial "home/contacts.html" . }}
+
+  {{ partial "home/insights.html" . }}
+  {{ partial "home/expertise.html" . }}
+  {{ partial "home/testimonials.html" . }}
+{{ end }}
